@@ -1,12 +1,14 @@
 from setuptools import setup, find_packages
 
-setup(name="geventdaemon",
-      version="0.1dev",
+files = ["geventdaemon.py"]
+
+setup(name="python-geventdaemon",
+      version="1.0",
       author="Antonin Amand",
       author_email="antonin.amand@gmail.com",
       description="gevent daemonizer",
-      package_dir = {'':'lib'},
-      packages=find_packages('lib'),
+      packages = ['python-geventdaemon'],
+      package_data = {'package' : files },
       zip_safe=False,
       install_requires=[
           'gevent',
