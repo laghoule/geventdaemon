@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 files = ["geventdaemon.py"]
 
-setup(name="python-geventdaemon",
+setup(name="geventdaemon",
       version="1.0",
       author="Antonin Amand",
       author_email="antonin.amand@gmail.com",
